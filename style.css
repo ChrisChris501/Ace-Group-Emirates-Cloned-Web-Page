@@ -2118,6 +2118,13 @@ hr {
     color: #a9a9a9;
     font-size: 14px;
 }
+.cont1a a{
+    text-decoration: none;
+}
+.cont1a a:hover{
+    background: #666;
+    text-decoration: underline;
+}
 .cont2{
     display: flex;
     flex-direction: row;
