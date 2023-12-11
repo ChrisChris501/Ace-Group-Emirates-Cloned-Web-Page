@@ -374,6 +374,7 @@
    position: relative;
    top: 30px;
    align-items: center;
+   background-color: rgb(250,250,250);
  }
 
  .login-text{
@@ -516,6 +517,34 @@
  .login-sub-cont3 a{
    color: inherit;
  }
+ .Before-footer{
+    background-color: rgb(31, 30, 30);
+    color: grey;
+    height: 50px;
+    position: relative;
+    top:40px ;
+ }
+ .before-div{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 170px;
+    gap: 20px;
+    top: 15px;
+ }
+ .before-div h4{
+    font-size: 20px;
+    color: #adabab;
+ }
+ .before-div i{
+    font-size: 12px;
+    position: relative;
+    top: 7px;
+ }
+ .before-div p{
+    margin-top: 5px;
+ }
+ 
  .signUpLink{
    position: relative;
    top: 30px;
@@ -954,14 +983,14 @@
 .footer-login i{
     font-size: 10px;
     position: relative;
-    top: 10px;
+    top: 15px;
 }
 .footer-login a{
     color: grey;
     text-decoration: none;
     font-size: 15px;
     position: relative;
-    top: 5px;
+    top: 10px;
 }
 .footer-login a:hover{
     color: white;
@@ -975,7 +1004,7 @@
 .footer-login p{
     font-size: 13.5px;
     position: relative;
-    top: 8px;
+    top: 12px;
 }
 
 
@@ -1009,8 +1038,6 @@
     filter: brightness(50%);
     z-index: -1;
 }
-
-
 
 .emirate-big{
     display: flex;
@@ -1086,6 +1113,7 @@
     position: fixed;
     left: 1310px;
     top: 200px;
+    z-index: 9999;
    
  }
  .emirate-feedback h6{
@@ -1441,7 +1469,7 @@
 }
 
 #destination {
-  background-color: white;
+  background-color: whitesmoke;
   width: 29rem;
   height: 18rem;
   border-radius: 0.2rem;
@@ -1999,28 +2027,35 @@
   
   }
 
-  /*Footer ---Ruth------*/
+  /*Footer------*/
 
 footer {
     background-color: #333;
-    border: 0;
-    padding: 20px 50px;
-    margin: 20px;
+    position: relative;
+    top: 40px;
+    width: 100%;
+    overflow: hidden;
 
 }
+
 
 .container {
+    position: relative;
+    width: 70%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    left: 170px;
+    margin-top:10px ;
 }
 
+
 .container>div {
-    width: 300px;
+    width: 400px;
 }
 
 .container>div .heading {
-    margin-bottom: 10px;
+    position: relative;
+    right: 80px;
+    margin-bottom: 20px;
     font-size: 18px;
     font-weight: 600;
     color: #fff;
@@ -2028,60 +2063,181 @@ footer {
 }
 
 
-.container>div ul li {
-    list-style: none;
+.container>div ul li  {
     margin-bottom: 5px;
     color: #a9a9a9;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.6rem;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 
 }
-
-hr {
-    margin: 30px 0;
-
+.container > div ul li a{
+    text-decoration: none;
 }
-
-.container>div ul li:hover {
-    background-color: #f6f6f6;
-    text-decoration: underline;
-
-}
-
-.container>div p {
-    color: #a9a9a9;
-    font-weight: 400;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-
-}
-
 a {
     color: #a9a9a9;
     font-weight: 400;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
 }
-
-container>div a:hover {
-    background-color: #f6f6f6;
-
+.container>div ul li a:hover {
+    background: #666;
+    text-decoration: underline;
 }
 
-.social icons{
-    margin-right: 6px;
-    margin-bottom: .6rem;
-    color: #000;
-    width: 40px;
+
+hr {
+    margin: 15px 0;
+    width: 70%;
+    position: relative;
+    left: 170px; 
+}
+.container3{
+    position: relative;
+    width: 70%;
+    display: flex;
+    left: 170px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cont1{
+    display: flex;
+    gap: 100px;
+}
+.cont1a{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cont1a h3{
+    color: white;
+}
+.cont1a p{
+    color: #a9a9a9;
+    font-size: 14px;
+}
+.cont2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+   
+    
+
+}
+.cont2a{
+    display: flex;
+    gap: 10px;
+}
+.cont2a input{
     height: 40px;
-    background-size: 100%;
-    background-position: 50%;
-    background-repeat: no-repeat;
+    width: 210px;
+    border: none;
+    border-radius: 3px;
 }
+.cont2a input::placeholder{
+    padding-left: 10px;
+    font-size: 15px;
+}
+.cont2a button{
+    width: 100px;
+    height: 40px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+}
+.cont2a button:hover{
+    background: white;
+    color: black;
+}
+.cont2b{
+    position: relative;
+    right: 20px;
+}
+
+.cont2c{
+    display: flex;
+    gap: 5px;
+}
+.cont2c:hover{
+    cursor: pointer;
+}
+
+
+.cont2c img{
+    height: 38px;
+    width: 38px;
+    border: 1px solid black;
+    background: #212121;
+}
+.cont3{
+    color:hsl(0, 0%, 66%);
+    font-size: 13px;
+}
+.cont3 p{
+    width: 35%;
+}
+.cont4{
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: space-between;
+
+}
+.cont4 img{
+    width: 250px;
+}
+.container4{
+    position: relative;
+    width: 70%;
+    display: flex;
+    left: 170px;
+    top: 70px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.contain1{
+    display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.contain1a{
+    display: flex;
+    gap: 10px;
+}
+.contain1a :hover{
+    background: #666;
+    text-decoration: underline;
+}
+.contain1b{
+    position: relative;
+    top: 10px;
+    color: white;
+}
+.contain2{
+    position: relative;
+    left: 90px;
+    height: 160px;
+    width: 68px;
+    background: #d71921;
+    bottom: 40px;
+    
+}
+.contain2 img{
+    position: relative;
+    top: 5px;
+    width: 70px;
+}
+
+
 
  /* media query */
  
